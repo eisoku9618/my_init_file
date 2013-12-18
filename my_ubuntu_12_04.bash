@@ -23,7 +23,7 @@ sudo aptitude -y update
 sudo aptitude -y install
 
 # adobe reader
-sudo aptitude -y install adobereader-jpn
+# sudo aptitude -y install adobereader-jpn
 
 # JDK
 #sudo aptitude -y install oracle-jdk7-installer
@@ -39,7 +39,7 @@ sudo aptitude -y install texmaker
 sudo aptitude -y install ibus-qt4 qt4-qtconfig
 
 # emacs24
-sudo aptitude -y install emacs24 emacs24-el
+# sudo aptitude -y install emacs24 emacs24-el
 
 # Classic Menu Indicator
 sudo aptitude -y install classicmenu-indicator
