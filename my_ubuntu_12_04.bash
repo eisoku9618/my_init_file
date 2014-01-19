@@ -32,7 +32,7 @@ sudo aptitude -y install
 #sudo aptitude -y install gcc-avr avr-libc avrdude
 
 # tex
-sudo aptitude install -y nkf ptex-bin dvipsk-ja xpdf gs-cjk-resource latex-cjk-japanese language-pack-ja ghostscript python-roman ptex-jtex jbibtex-bin ptex-jisfonts texlive-latex-extra texlive-fonts-recommended dia-gnome
+sudo aptitude install -y nkf ptex-bin dvipsk-ja xpdf gs-cjk-resource latex-cjk-japanese language-pack-ja ghostscript python-roman ptex-jtex jbibtex-bin ptex-jisfonts texlive-latex-extra texlive-fonts-recommended dia-gnome texlive-science
 
 # TeX maker
 sudo aptitude -y install texmaker
@@ -92,7 +92,7 @@ export LANG=C xdg-user-dirs-gtk-update
 sudo aptitude -y install indicator-multiload
 
 # for movies
-sudo aptitude -y install flashplugin-installer 
+sudo aptitude -y install flashplugin-installer
 
 # for git
 sudo aptitude -y install ssh
