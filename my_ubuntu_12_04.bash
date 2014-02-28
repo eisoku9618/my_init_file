@@ -17,19 +17,8 @@ sudo apt-add-repository -y ppa:diesch/testing
 #sudo add-apt-repository -y ppa:webupd8team/java
 sudo add-apt-repository -y ppa:ikoinoba/ppa
 
-# Skype
-sudo apt-add-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 sudo aptitude -y update
 sudo aptitude -y install
-
-# adobe reader
-# sudo aptitude -y install adobereader-jpn
-
-# JDK
-#sudo aptitude -y install oracle-jdk7-installer
-
-# Arduino (after JDK)
-#sudo aptitude -y install gcc-avr avr-libc avrdude
 
 # tex
 sudo aptitude install -y nkf ptex-bin dvipsk-ja xpdf gs-cjk-resource latex-cjk-japanese language-pack-ja ghostscript python-roman ptex-jtex jbibtex-bin ptex-jisfonts texlive-latex-extra texlive-fonts-recommended dia-gnome texlive-science
@@ -100,3 +89,5 @@ sudo aptitude -y install xsel
 
 # for python
 sudo aptitude -y install ipython ipython-notebook
+
+sudo aptitude -y install byobu
