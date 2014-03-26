@@ -21,11 +21,11 @@ sudo aptitude -y update
 sudo aptitude -y install
 
 # tex
-sudo aptitude install -y nkf ptex-bin dvipsk-ja xpdf gs-cjk-resource latex-cjk-japanese language-pack-ja ghostscript python-roman ptex-jtex jbibtex-bin ptex-jisfonts texlive-latex-extra texlive-fonts-recommended dia-gnome texlive-science
+sudo aptitude install -y nkf ptex-bin dvipsk-ja xpdf gs-cjk-resource latex-cjk-japanese language-pack-ja ghostscript python-roman ptex-jtex jbibtex-bin ptex-jisfonts texlive-latex-extra texlive-fonts-recommended dia-gnome texlive-science okumura-clsfiles
 
 # TeX maker
-sudo aptitude -y install texmaker
-sudo aptitude -y install ibus-qt4 qt4-qtconfig
+# sudo aptitude -y install texmaker
+# sudo aptitude -y install ibus-qt4 qt4-qtconfig
 
 # emacs24
 # sudo aptitude -y install emacs24 emacs24-el
@@ -38,7 +38,7 @@ sudo aptitude -y install ibus-mozc
 sudo aptitude -y install emacs-mozc emacs-mozc-bin
 
 # guake
-sudo aptitude -y install guake
+# sudo aptitude -y install guake
 
 # pdf-shuffler
 sudo aptitude -y install pdfshuffler
@@ -47,23 +47,23 @@ sudo aptitude -y install pdfshuffler
 sudo aptitude -y install gimp inkscape
 
 # Ricty
-sudo aptitude -y install fontforge
-cd /tmp
-if [ ! -f Inconsolata.otf ]; then
-    wget http://levien.com/type/myfonts/Inconsolata.otf
-fi
-if [ ! -f ricty_generator.sh ]; then
-    wget -O ricty_generator.sh https://www.dropbox.com/s/eza74btlwbte0a0/ricty_generator.sh?dl=1
-fi
-if [ ! -f migu-1m-20121030.zip ]; then
-    wget -O migu-1m-20121030.zip https://www.dropbox.com/s/wx2s7gz4u3k2rl4/migu-1m-20121030.zip?dl=1
-fi
-unzip migu-1m-20121030.zip
-sudo mv migu-1m-20121030/migu-1m-* ./
-sudo sh ricty_generator.sh Inconsolata.otf migu-1m-regular.ttf migu-1m-bold.ttf
-sudo mkdir -p ~/.fonts
-sudo cp Ricty-{Regular,Bold}.ttf ~/.fonts/
-fc-cache -vf
+# sudo aptitude -y install fontforge
+# cd /tmp
+# if [ ! -f Inconsolata.otf ]; then
+#     wget http://levien.com/type/myfonts/Inconsolata.otf
+# fi
+# if [ ! -f ricty_generator.sh ]; then
+#     wget -O ricty_generator.sh https://www.dropbox.com/s/eza74btlwbte0a0/ricty_generator.sh?dl=1
+# fi
+# if [ ! -f migu-1m-20121030.zip ]; then
+#     wget -O migu-1m-20121030.zip https://www.dropbox.com/s/wx2s7gz4u3k2rl4/migu-1m-20121030.zip?dl=1
+# fi
+# unzip migu-1m-20121030.zip
+# sudo mv migu-1m-20121030/migu-1m-* ./
+# sudo sh ricty_generator.sh Inconsolata.otf migu-1m-regular.ttf migu-1m-bold.ttf
+# sudo mkdir -p ~/.fonts
+# sudo cp Ricty-{Regular,Bold}.ttf ~/.fonts/
+# fc-cache -vf
 
 # Compiz & Compiz Fusion plugins
 sudo aptitude -y install compiz compizconfig-settings-manager
