@@ -17,16 +17,12 @@ ln -s $HOME/Dropbox/settings/bashrc/.bashrc.mech $HOME/.bashrc.mech
 sudo rm -f ~/bashrc.ros.delayedload
 
 # texmaker setting
-sudo rm -rf ~/.config/xm1
-ln -s $HOME/Dropbox/settings/.settings/xm1 $HOME/.config/xm1
+# sudo rm -rf ~/.config/xm1
+# ln -s $HOME/Dropbox/settings/.settings/xm1 $HOME/.config/xm1
 
 # startup applications setting
 sudo rm -rf ~/.config/autostart
 ln -s $HOME/Dropbox/settings/.settings/autostart $HOME/.config/autostart
-
-# # cairo-dock setting
-# sudo rm -rf ~/.config/cairo-dock
-# ln -s $HOME/Dropbox/settings/.settings/cairo-dock $HOME/.config/cairo-dock
 
 # Couturier
 cp $HOME/Dropbox/Download/couturier_0.6.2-1_all.deb ~/Desktop
