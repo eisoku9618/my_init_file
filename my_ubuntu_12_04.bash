@@ -94,8 +94,8 @@ sudo aptitude -y install byobu
 
 # for Dropbox and Chrome
 sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
-sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ saucy main" >> /etc/apt/sources.list.d/dropbox.list'
+sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ $(lsb_release -sc) main" >> /etc/apt/sources.list.d/dropbox.list'
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 sudo aptitude update
 sudo aptitude -y install dropbox google-chrome-stable
